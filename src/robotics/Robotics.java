@@ -31,14 +31,14 @@ public class Robotics {
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) throws Exception {
-		System.out.println(WIDTH);
+		//System.out.println(WIDTH);
 		BufferedImage b = (ImageIO.read(new File("testing.png")));
 		boolean[][] w = EDGES?getEdges(b):getWhites(b);
 		for (boolean[] b1 : w) {
 			for (boolean bool : b1) {
-				System.out.print(bool ? "H" : " ");
+				//System.out.print(bool ? "H" : " ");
 			}
-			System.out.println();
+			//System.out.println();
 		}
 		GameFrame m = new GameFrame(w);
 		for (;;) {
